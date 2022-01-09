@@ -25,7 +25,13 @@ class UIIntroductionView: UIView {
         let center = point
         let radius = (rect.width / 2) - 150
         
-        let path = UIBezierPath(arcCenter: center, radius: radius, startAngle: 0, endAngle:  2 * CGFloat.pi , clockwise: false)
+        let path = UIBezierPath(
+            arcCenter: center,
+            radius: radius,
+            startAngle: 0,
+            endAngle:  2 * CGFloat.pi ,
+            clockwise: false
+        )
         
         path.lineWidth = 4
         path.lineCapStyle = .round
@@ -40,11 +46,26 @@ class UIIntroductionView: UIView {
         let path = UIBezierPath()
         let path2 = UIBezierPath()
         
-        let point1 = CGPoint(x: rect.width / 4, y: rect.height - rect.height / 4)
-        let point2 = CGPoint(x: rect.width / 2, y: rect.height / 2 - rect.height / 7)
-        let point3 = CGPoint(x: rect.width / 2 + rect.width / 4, y: rect.height - rect.height / 4 )
-        let point4 = CGPoint(x: rect.width / 7, y: rect.height / 2)
-        let point5 = CGPoint(x: rect.width  - rect.width / 7, y: rect.height / 2)
+        let point1 = CGPoint(
+            x: rect.width / 4,
+            y: rect.height - rect.height / 4
+        )
+        let point2 = CGPoint(
+            x: rect.width / 2,
+            y: rect.height / 2 - rect.height / 7
+        )
+        let point3 = CGPoint(
+            x: rect.width / 2 + rect.width / 4,
+            y: rect.height - rect.height / 4
+        )
+        let point4 = CGPoint(
+            x: rect.width / 7,
+            y: rect.height / 2
+        )
+        let point5 = CGPoint(
+            x: rect.width  - rect.width / 7,
+            y: rect.height / 2
+        )
         
         path.move(to: point1)
         
